@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/H8_201 Login with correct details'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Test Call/Login Only'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/AppointmentPage_CURA Healthcare Service/label_Medicaid'))
 
 WebUI.selectOptionByValue(findTestObject('AppointmentPage_CURA Healthcare Service/select_Combo_FaciltyHealthcareCenter'), 
     'Hongkong CURA Healthcare Center', false)
-
-WebUI.click(findTestObject('Object Repository/AppointmentPage_CURA Healthcare Service/label_Medicaid'))
 
 WebUI.setText(findTestObject('AppointmentPage_CURA Healthcare Service/calendar_Visit Date (Required)_visit_date'), '29/07/2023')
 
@@ -42,4 +42,6 @@ WebUI.verifyElementText(findTestObject('AppointmentResult_CURA Healthcare Servic
 WebUI.verifyElementText(findTestObject('AppointmentResult_CURA Healthcare Service/text_HealthcareProgramResult'), 'Medicaid')
 
 WebUI.verifyElementText(findTestObject('AppointmentResult_CURA Healthcare Service/text_HospitalReadmissionResult'), 'No')
+
+WebUI.closeBrowser()
 

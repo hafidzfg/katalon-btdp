@@ -17,21 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Test Call/Login Only'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.selectOptionByValue(findTestObject('AppointmentPage_CURA Healthcare Service/select_Combo_FaciltyHealthcareCenter'), 
-    'Hongkong CURA Healthcare Center', false)
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.click(findTestObject('Object Repository/AppointmentPage_CURA Healthcare Service/label_Medicaid'))
+WebUI.click(findTestObject('Object Repository/Homepage_CURA Healthcare Service/button_Make Appointment'))
 
-WebUI.setText(findTestObject('AppointmentPage_CURA Healthcare Service/calendar_Visit Date (Required)_visit_date'), '29/07/2000')
+WebUI.setText(findTestObject('LoginPage_CURA Healthcare Service/input_Username_username'), GlobalVariable.username)
 
-WebUI.setText(findTestObject('AppointmentPage_CURA Healthcare Service/input_textarea_Comment'), 'Saya sakit kepala')
+WebUI.setEncryptedText(findTestObject('LoginPage_CURA Healthcare Service/input_Password_password'), GlobalVariable.encryptedPassword)
 
-WebUI.click(findTestObject('AppointmentPage_CURA Healthcare Service/button_Book Appointment'))
+WebUI.click(findTestObject('LoginPage_CURA Healthcare Service/button_Login'))
 
-WebUI.verifyElementNotPresent(findTestObject('AppointmentResult_CURA Healthcare Service/header_h2_Appointment Confirmation'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('AppointmentPage_CURA Healthcare Service/text_h2_Make Appointment'), 0)
 
