@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LoginDDT</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8cfe8f24-619a-46a1-946d-6583a382a140</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>52af40e5-4874-435d-a335-974edf074b37</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/LoginData</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>52af40e5-4874-435d-a335-974edf074b37</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>username</value>
+      <variableId>a7f70de2-30d4-4247-945a-198e236c6b2a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>52af40e5-4874-435d-a335-974edf074b37</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>3bd623b7-89fe-4f52-905e-a6e51c54a596</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'John Doe'</defaultValue>
+      <description></description>
+      <id>a7f70de2-30d4-4247-945a-198e236c6b2a</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'ThisIsNotAPassword'</defaultValue>
+      <description></description>
+      <id>3bd623b7-89fe-4f52-905e-a6e51c54a596</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

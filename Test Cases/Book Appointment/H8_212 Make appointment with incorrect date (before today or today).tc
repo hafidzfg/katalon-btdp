@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>H8_212 Make appointment with incorrect date (before today or today)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d4846e2e-6d86-4126-aa67-7ec937331936</testCaseGuid>
+</TestCaseEntity>
