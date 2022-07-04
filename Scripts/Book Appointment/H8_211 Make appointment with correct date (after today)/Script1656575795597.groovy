@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('AppointmentPage_CURA Healthcare Service/input_text
 WebUI.click(findTestObject('AppointmentPage_CURA Healthcare Service/button_Book Appointment'))
 
 WebUI.verifyElementPresent(findTestObject('AppointmentResult_CURA Healthcare Service/header_h2_Appointment Confirmation'), 
-    0)
+    5)
 
 WebUI.verifyElementText(findTestObject('AppointmentResult_CURA Healthcare Service/text_AppointmentDateResult'), '29/07/2023')
 

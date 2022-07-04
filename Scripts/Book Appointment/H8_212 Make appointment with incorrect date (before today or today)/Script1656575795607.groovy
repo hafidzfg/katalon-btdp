@@ -31,7 +31,7 @@ WebUI.setText(findTestObject('AppointmentPage_CURA Healthcare Service/input_text
 WebUI.click(findTestObject('AppointmentPage_CURA Healthcare Service/button_Book Appointment'))
 
 WebUI.verifyElementNotPresent(findTestObject('AppointmentResult_CURA Healthcare Service/header_h2_Appointment Confirmation'), 
-    5, FailureHandling.CONTINUE_ON_FAILURE)
+    5, FailureHandling.OPTIONAL)
 
 WebUI.closeBrowser()
 
