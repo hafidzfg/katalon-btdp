@@ -29,8 +29,11 @@ WebUI.setEncryptedText(findTestObject('LoginPage_CURA Healthcare Service/input_P
 
 WebUI.click(findTestObject('LoginPage_CURA Healthcare Service/button_Login'))
 
-WebUI.verifyElementNotPresent(findTestObject('LoginPage_CURA Healthcare Service/txt_Login failed Please ensure the username and password are valid'), 
-    5)
+WebUI.verifyElementVisible(findTestObject('LoginPage_CURA Healthcare Service/txt_Login failed Please ensure the username and password are valid'), 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('LoginPage_CURA Healthcare Service/txt_Login failed Please ensure the username and password are valid'), 
+    'Login failed! Please ensure the username and password are valid.')
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

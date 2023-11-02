@@ -6,15 +6,19 @@
    <elementGuidId>e631728d-a4f7-4fdb-88c2-b7d4c8aea078</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='menu-toggle']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#menu-toggle</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'menu-toggle' and @href = '#']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='menu-toggle']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1a509af0-17fd-4511-8812-ad71b3d11d52</webElementGuid>
+      <webElementGuid>ff0c4395-8d57-4d78-b6b5-cab1bd97dc0e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>id</name>
       <type>Main</type>
       <value>menu-toggle</value>
-      <webElementGuid>643abd18-003c-4db9-8bf9-da2967da5ce7</webElementGuid>
+      <webElementGuid>c7c19a73-f606-45a3-a28a-af7bea15ee4b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>12a4c504-acbb-433f-8b69-34724b62a26c</webElementGuid>
+      <webElementGuid>e844feae-0310-49cc-8cd8-42af414fe9e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +50,7 @@
       <name>class</name>
       <type>Main</type>
       <value>btn btn-dark btn-lg toggle</value>
-      <webElementGuid>234b053c-eb6c-4ca7-b8bb-3bf8e90d5d9e</webElementGuid>
+      <webElementGuid>cadca8e6-f1b3-4cd6-8a0e-f070fede4dbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;menu-toggle&quot;)</value>
-      <webElementGuid>f156269a-3b48-49aa-9238-4fc98c753fe5</webElementGuid>
+      <webElementGuid>bc2bb361-e8ce-40d9-847f-a60663a59a6a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,31 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='menu-toggle']</value>
-      <webElementGuid>43e1ee00-54c7-4139-8ac3-d04bb500efc2</webElementGuid>
+      <webElementGuid>33687916-3b12-433a-a086-2c05fbf59b43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '#')]</value>
+      <webElementGuid>7c18e0be-b1f1-4677-a1e3-d0a95bf2eb5b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a</value>
+      <webElementGuid>49e8ee1f-9b57-41ae-920c-67b1c9c50a2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@id = 'menu-toggle' and @href = '#']</value>
+      <webElementGuid>f0ae88e7-7e99-478a-8bc6-c3f4349a6435</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -79,29 +107,5 @@
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Home'])[1]/preceding::a[3]</value>
       <webElementGuid>4f3ecbed-9b28-468a-8dcd-25062fb1e787</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <type>Main</type>
-      <value>//a[contains(@href, '#')]</value>
-      <webElementGuid>f23aa0b8-aad5-4357-846e-86d076c36510</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//a</value>
-      <webElementGuid>da51b1b6-f1a1-43f7-8d09-642c59580d8a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//a[@id = 'menu-toggle' and @href = '#']</value>
-      <webElementGuid>9f73540c-973f-4f01-9f1b-78b8976f830f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

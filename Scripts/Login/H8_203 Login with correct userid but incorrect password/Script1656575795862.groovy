@@ -30,9 +30,10 @@ WebUI.setEncryptedText(findTestObject('LoginPage_CURA Healthcare Service/input_P
 WebUI.click(findTestObject('LoginPage_CURA Healthcare Service/button_Login'))
 
 if (WebUI.verifyElementNotPresent(findTestObject('LoginPage_CURA Healthcare Service/txt_Login failed Please ensure the username and password are valid'), 
-    5, FailureHandling.OPTIONAL) == true) {
+    5, FailureHandling.OPTIONAL) == false) {
     println('Login berhasil')
-} else {
+} else if (WebUI.verifyElementNotPresent(findTestObject('LoginPage_CURA Healthcare Service/txt_Login failed Please ensure the username and password are valid'), 
+    5) == true) {
     println('Login gagal!')
 }
 

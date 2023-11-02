@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('Object Repository/Homepage_CURA Healthcare Service/button_Make Appointment'))
 
@@ -29,7 +29,9 @@ WebUI.setEncryptedText(findTestObject('LoginPage_CURA Healthcare Service/input_P
 
 WebUI.click(findTestObject('LoginPage_CURA Healthcare Service/button_Login'))
 
-WebUI.verifyElementPresent(findTestObject('AppointmentPage_CURA Healthcare Service/text_h2_Make Appointment'), 5)
+WebUI.verifyElementVisible(findTestObject('AppointmentPage_CURA Healthcare Service/text_h2_Make Appointment'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('AppointmentResult_CURA Healthcare Service/button_SidebarLogout'), 0)
 
 WebUI.click(findTestObject('AppointmentPage_CURA Healthcare Service/button_SidebarExpand'))
 
